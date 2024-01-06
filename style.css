@@ -1,0 +1,128 @@
+#container {
+    display: flex;
+    align-items: flex-end;
+    height: 300px;
+}
+
+.bar {
+    background-color: #593fda;
+    /* Light purple color */
+    margin: 0 1px;
+    transition: height 0.2s;
+    display: flex;
+    flex-direction: column-reverse;
+    /* Reverse the flex direction to have values below the bar */
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    position: relative;
+}
+
+.bar span {
+    margin-top: 5px;
+    /* Adjust the spacing between the value and the bar */
+}
+
+h1 {
+    color: yellow;
+    display: block;
+    width: 100%;
+    background-color: green;
+    padding: 5px;
+    border-top: 3px solid black;
+    margin-bottom: 0;
+}
+
+button {
+    margin: 0.5px;
+}
+
+.test {
+    display: flex;
+    justify-content: flex-start;
+    /* Adjust to distribute buttons evenly */
+    background-color: #ECFCEC;
+    width: 100%;
+    padding: 2px;
+    margin-top: 0px;
+    margin-right: 0.5px;
+    /* Add margin to separate control buttons from bars */
+}
+
+.control-btn-container {
+    display: flex;
+    align-items: center;
+}
+
+.speed-control-container {
+    display: flex;
+    align-items: center;
+    /* Align the slider and label in one line */
+    margin-right: 10px;
+    /* Adjust margin for spacing between slider and label */
+}
+
+
+.speed-control-container label {
+    color: green;
+    margin-right: 10px;
+    /* Adjust the spacing between the label and the speed controller */
+}
+
+#container {
+    margin-bottom: 20px;
+    /* Add margin to separate bars from control buttons */
+}
+
+.control-btn-container {
+    margin-top: 50px;
+}
+
+.speed-control-container {
+    display: flex;
+    flex-direction: column;
+    /* Display the label and slider in a column */
+    align-items: center;
+    /* Center the items horizontally */
+    margin-top: 5px;
+    /* Adjust margin for spacing between label and slider */
+}
+
+.speed-control-container label {
+    margin-bottom: 5px;
+    /* Adjust margin to separate the label and slider */
+}
+
+.size-input {
+    width: 40px;
+    /* Adjust the width of the input boxes */
+    margin-right: 3px;
+
+}
+
+button {
+    margin-right: 3px;
+}
+
+input[type="range"] {
+    accent-color: green;
+}
+
+h4 {
+    color: yellow;
+    display: block;
+    width: 100%;
+    background-color: green;
+    padding: 5px;
+    border-top: 3px solid black;
+    margin-bottom: 0;
+    margin-top: 0;
+
+}
+
+h6 {
+    color: black;
+    display: none;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Comparison Sorting Algorithm</h1>
+
+    <div class="test">
+        <button onclick="randomizeArray()">Randomize Array</button>
+        <button onclick="sortArray('insertionSort')">Insertion Sort</button>
+        <button onclick="sortArray('selectionSort')">Selection Sort</button>
+        <button onclick="sortArray('bubbleSort')">Bubble Sort</button>
+        <button onclick="sortArray('quickSort')">Quick Sort</button>
+        <button onclick="sortArray('mergeSort')">Merge Sort</button>
+        <button onclick="sortArray('shellSort')">Shell Sort</button>
+        <!-- Add buttons for other sorting algorithms -->
+        <button onclick="changeSize()">Change Size</button>
+
+    </div>
+
+
+    <div id="container"></div>
+    <h6 id="animationCompletedMessage">Animation Completed</h6>
+
+    <!-- Animation Control Buttons -->
+    <div class="test control-btn-container">
+        <button onclick="skipBack()">Skip Back</button>
+        <button onclick="stepBack()">Step Back</button>
+        <button onclick="pause()">Pause</button>
+        <button onclick="stepForward()">Step Forward</button>
+        <button onclick="skipForward()">Skip Forward</button>
+
+        <!-- Speed Control -->
+        <!-- Speed Control -->
+
+        <!-- Speed Control -->
+        <div class="speed-control-container">
+
+            <input type="range" id="speedControl" min="1" max="10" value="5" oninput="changeSpeed(this.value)">
+            <label for="speedControl">Animation Speed:</label>
+        </div>
+
+
+
+
+        <div class="size-control-container">
+            <label for="widthInput">w</label>
+            <input type="text" id="widthInput" class="size-input" >
+            <label for="heightInput">h</label>
+            <input type="text" id="heightInput" class="size-input" >
+        </div>
+
+        <button onclick="changeCanvasSize()">Change Canvas Size</button>
+        <button onclick="moveBars()">Move Control</button>
+
+    </div>
+
+    <h4>Algorithm Visualization</h4>
+
+    <script src="index.js" charset="UTF-8"></script>
+
+</body>
+
+</html>
